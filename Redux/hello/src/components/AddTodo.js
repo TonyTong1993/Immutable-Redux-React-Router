@@ -13,7 +13,7 @@ import { addTodo } from '../actions/TodoAction'
   	var input;
   	const {onClick} = this.props;
     return (	
-      <div>
+      <div className="addTodo">
       	<form>
       		<input type="text" ref={node => input = node}/>
       		<a onClick={()=>{

@@ -1,1 +1,12 @@
+.addTodo {
+	width: 320px;
+	margin: 20px auto;
+}
+.addTodo >form>input {
+	border: 1px solid #666;
+	outline-style: none;
+}
+.addTodo >form>a {
+	margin-left: 10px;
+}
 
