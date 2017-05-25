@@ -8,8 +8,9 @@ export const todos = (state=[],action)=>{
           visible:action.visible,
           task_id:action.task_id}]);
         case COMPLETED:
-         state.filter(todo=>todo.task_id==action.task_id).map(item => item.status = !item.status);
-         return [...state];
+         return state.map(todo =>
+         	todo.task_id === action.task_id ? {...todo,status:!todo.status}:todo
+         	)
 		default:
 		return state;
 	}	
