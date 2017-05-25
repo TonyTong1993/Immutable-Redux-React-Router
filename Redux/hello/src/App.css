@@ -26,3 +26,9 @@
 .todoItem > p {
 	line-height: 44px;
 }
+.active {
+	text-decoration: none;
+}
+.completed {
+	text-decoration: line-through;
+}
