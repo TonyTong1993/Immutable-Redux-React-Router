@@ -1,6 +1,7 @@
 import React from 'react';
 import  PropTypes  from 'prop-types';
 import { connect } from 'react-redux';
+import TodoItem from './TodoItem';
  class TodoList extends React.Component {
   static propTypes = {
     name: PropTypes.string,
@@ -11,7 +12,7 @@ import { connect } from 'react-redux';
   render() {
     const { todos } = this.props;
     const node = todos.map(todo=>{
-      return <li key={todo.task_id}>{todo.task_name}</li>
+      return <TodoItem key={todo.task_id}>{todo.task_name}</TodoItem>
     })
     return (
       <div className="todoList">

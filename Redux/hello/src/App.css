@@ -15,3 +15,14 @@
 	margin: 20px auto;
 	border: 1px solid green;
 }
+.todoList > ul {
+	list-style-type: none;
+
+}
+.todoItem {
+	height: 44px;
+	border-bottom: 1px solid #666;
+}
+.todoItem > p {
+	line-height: 44px;
+}
