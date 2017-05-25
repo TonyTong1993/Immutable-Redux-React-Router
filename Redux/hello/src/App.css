@@ -9,4 +9,9 @@
 .addTodo >form>a {
 	margin-left: 10px;
 }
-
+.todoList {
+	width: 480px;
+	height: 600px;
+	margin: 20px auto;
+	border: 1px solid green;
+}
