@@ -23,9 +23,20 @@ import TodoItem from './TodoItem';
     );
   }
 }
+const filterTodos = (filter,todos)=>{
+  switch(filter) {
+
+    case "ALL":
+    return todos;
+    case "ACTIVE":
+    return todos.filter(todo=>todo.status ==false);
+    case "INACTIVE":
+    return todos.filter(todo=>todo.status ==true);
+  }
+}
 const mapStateToProps = (state,ownerProps)=>{
   return {
-    todos:state
+    todos:filterTodos(state.filter,state.todos)
   }
 }
 export default connect(mapStateToProps,null)(TodoList);

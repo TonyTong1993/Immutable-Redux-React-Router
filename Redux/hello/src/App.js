@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { createStore ,compose} from 'redux';
 import { Provider } from 'react-redux';
-import { todos as reducer } from './reducers/TodoReducer';
+import  reducer  from './reducers/TodoReducer';
 import { addTodo } from './actions/TodoAction';
 import Root from './container/Root';
 import DevTools from './DevTools';

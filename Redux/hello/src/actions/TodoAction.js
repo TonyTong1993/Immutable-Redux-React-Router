@@ -17,3 +17,9 @@ export const setCompleted = (task_id)=>{
 		task_id
 	}
 }
+export const setVisiblityFilter = (filter)=>{
+	return {
+		type : VISIBILITY_FILTER,
+		filter
+	}
+}

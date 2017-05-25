@@ -1,5 +1,6 @@
-import { ADD_TODO,COMPLETED } from '../actions/TodoAction';
-export const todos = (state=[],action)=>{
+import { ADD_TODO,COMPLETED,VISIBILITY_FILTER} from '../actions/TodoAction';
+import { combineReducers } from 'redux';
+const todos = (state=[],action)=>{
 	switch (action.type) {
 		case ADD_TODO:
          return state.concat([{ 
@@ -15,3 +16,15 @@ export const todos = (state=[],action)=>{
 		return state;
 	}	
 }; 
+const visibilityFilter = (state="ALL",action)=>{
+  switch (action.type) {
+    case VISIBILITY_FILTER:
+      return action.filter
+    default:
+    return state;
+  }
+}
+export default combineReducers({
+  todos:todos,
+  filter:visibilityFilter
+})

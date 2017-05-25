@@ -1,6 +1,10 @@
 .addTodo {
-	width: 320px;
+	width: 480px;
 	margin: 20px auto;
+}
+.addTodo >form {
+	width: 400px;
+	margin: 0 auto;
 }
 .addTodo >form>input {
 	border: 1px solid #666;
@@ -8,7 +12,10 @@
 }
 .addTodo >form>a {
 	margin-left: 10px;
+	border: 1px solid #ffb300;
 }
+
+/* todoList中的内容css */
 .todoList {
 	width: 480px;
 	height: 600px;
